@@ -59,7 +59,7 @@ const tbodyAmerica = document.querySelector("#america");
             function bolitas(x) {
                 var visual = "";
                 for (let i = 0; i < x; i++) {
-                    visual += '<span class="icono-institucion"></span>';
+                    visual += '<span class="icono-resumen"></span>';
                 }
                 return "<span>" + visual + "</span>";
             }
