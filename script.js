@@ -1,8 +1,8 @@
-            const tbodyAmerica = document.querySelector("#america");
+const tbodyAmerica = document.querySelector("#america");
             const tbodyEuropa = document.querySelector("#europa");
             const tbodyOtros = document.querySelector("#otros");
 
-            const ENDPOINT = "…";
+            const ENDPOINT = "https://api.myjson.online/v1/records/eeda2de0-5320-44e3-a0c6-10b59747624c";
 
             const paisesAmerica = ["Argentina", "Brazil", "Canada", "Chile", "Colombia", "Mexico", "United States"];
             const paisesEuropa = ["Austria", "Belgium", "Czech Republic", "Denmark", "Estonia", "Finland", "France", "Germany", "Ireland", "Italy", "Netherlands", "Sweden", "Switzerland", "United Kingdom"];
@@ -59,7 +59,7 @@
             function bolitas(x) {
                 var visual = "";
                 for (let i = 0; i < x; i++) {
-                    visual += " ● ";
+                    visual += '<span class="icono-institucion"></span>';
                 }
                 return "<span>" + visual + "</span>";
             }
